@@ -2,6 +2,10 @@
 
 Olá, meu nome é Talita. 
 
+
+![Alt Text](https://media.giphy.com/media/x5cLbwEvOskX6/giphy.gif)
+
+
 Neste repositório você terá acesso as minhas anotações sobre o conteúdo consumido durante o bootcamp. Além dos desafios e projetos realizados durante o período de estudo. Abaixo estão alguns links que te levaram diretamente até as seções especificas.
 
 [Git/GitGub](https://github.com/TalitaRamos/Desafio-Santander-Bootcamp-Mobile-Developer/tree/main/Git)
