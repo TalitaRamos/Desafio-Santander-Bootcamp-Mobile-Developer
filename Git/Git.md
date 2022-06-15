@@ -17,7 +17,7 @@ OBS: A chave gerada com .pub é a chave pública
 1. Na pasta que as chaves são armazenadas digite **cat nome_chave.pub**
 2. Copie a chave
 
-![Exemplo de como digitar o nome da chave](imagens/exemplo.png)
+![Exemplo de como digitar o nome da chave](main/imagens/exemplo.png)
 
 ## Adicionar chave ao gitHub
 
