@@ -325,9 +325,162 @@ this[(0..this.length-1).random()].toUpperCase()
 
 #### Estruturas de Controle
 
+* Estruturas de controles : if/else, when(switch case), elvis operator (operador ternário)
+
+* Podem ser usados tanto para controle quanto para atribuição e podem ser encadeado com múltiplas estruturas
+
+* IF
+
+```
+if (expressão) {
+    //bloco de código
+} else if(expressão2) {
+    //bloco de código
+} else {
+    //bloco de código
+}
+```
+
+* When
+
+Se tiver um if com mais de três expressões é recomendado converter para um when
+
+
+```
+when {
+    case1 -> {}
+    case2 -> {}
+    case3 -> {}
+    else -> {}
+}
+```
+
+* Elvis Operator
+
+Usado para verificar se um valor é nulo ou não e oferecer uma alternativa pro uso desse valor
+
+```
+val a:Int? = null
+val number = a ?: 0
+```
+
 #### Atribuições, When e Elvis Operator
 
+* Atribuição
+
+Para conficionais feitas para atribuir um valor:
+
+O valor atribuído deve estar na última linha do bloco
+    
+```
+val minValue = if (a > b) {
+    println("b($b) é o menor valor")
+    b
+} else if (a < b) {
+       println("a($a) é o menor valor")
+       a
+} else {
+    println("Os valores são iguais")
+    b
+}
+```
+
+A condicional pode não usar chaves se só fizer a atribuição
+    
+```
+val maxValue = if (a > b) a else if (a < b) b else b
+```
+
+* When
+
+É equivalente ao switch
+
+Aceita tanto valores quando condicionais
+
+Aceita range como case
+
+Todo when precisa de um else
+
+```
+when {
+    a > b -> {}
+    a != b && a > c -> {}
+    b == 0 -> {}
+    else -> {}
+}
+```
+
+```
+when (year) {
+    -4000.. 475 -> //Antiguidade
+    476.. 1452 -> //Medieval
+    1453..1789 -> //Moderna
+    currentYear->  //Ano atual
+}
+```
+
+* Elvis Operator
+
+O mais próximo que o Kotlin tem de um operador ternário
+
+Verifica se um valor é nulo e apresenta uma opção
+
+Pode ser encadeado, mas o último valor precisa ser inquestionavelmente válido
+
+```
+val a:Int? = null
+val c:Int? = 9
+
+val number = a?: b?: 0
+
+//Se o valor de a não for nulo, number recebe a.
+
+//Se o valor de a for nulo e b não for nulo, number recebe b.
+
+//Se a e b forem nulos, number recebe 0
+```
+
+```
+fun main() {
+	val grade = (0..10).random()
+    println(grade.getStudentStatus())
+}
+
+fun Int.getStudentStatus():String{
+    println("nota $this")
+    return when(this) {
+        in 0..4 -> "Reprovado"
+        in 5..7 -> "Mediano"
+        in 8..9 -> "Bom"
+        10 -> "Excelente"
+        else -> "Indefinido"
+    }
+}
+```
+
+```
+fun main() {
+    var t:String
+    var x:Int? = 8
+    t = x?.getStudentStatus()?: ""
+    println(t)
+}
+
+fun Int.getStudentStatus():String{
+    println("nota $this")
+    return when(this) {
+        in 0..4 -> "Reprovado"
+        in 5..7 -> "Mediano"
+        in 8..9 -> "Bom"
+        10 -> "Excelente"
+        else -> "Indefinido"
+    }
+}
+```
+
 #### Estruturas de Repetição
+
+* 
 
 ## Links
 
