@@ -224,9 +224,104 @@ OBS: Se uma string retorna true para `isEmpty` irá retornar true para `isBlank`
 
 #### Introdução a Funções
 
+Toda função no kotlin possui o prefixo `fun`
+
+* Funções com retorno:
+
+`fun nomeFuncao(nome:tipo):TipoRetorno{}`
+
+* Funções sem retorno:
+
+`fun nomeFuncao(nome:tipo){}`
+
 #### Funções de ordem superior
 
+As funções de ordem superior recevem outra função ou lambda por parâmetro.
+
+São úteis para a generalização de funções e tratamento de erros
+
+```
+ val x = calculate(12,4,::sum) Referenciando a função
+ val y = (12,4){a,b -> a*b} A função é escrita diretamente
+```
+
+> `::` Referenciam uma função
+
+* Exemplos: 
+
+```
+fun main() {
+	val z:Int
+    
+    z = calculate(34,90, ::sum)
+    println(z)
+}
+
+ fun sum(n1:Int,n2:Int) = n1.plus(n2)
+
+ fun calculate(n1:Int,n2:Int, operation:(Int, Int) -> Int): Int{
+    val result = operation(n1,n2)
+    
+    return result
+ }
+```
+
+```
+fun main() {
+	val z:Int
+    
+    z = calculate(34,90) {a,b -> a+b}
+    println(z)
+}
+
+fun sum(n1:Int,n2:Int) = n1.plus(n2)
+
+fun calculate(n1:Int,n2:Int, operation:(Int, Int) -> Int): Int{
+    val result = operation(n1,n2)
+    
+    return result
+}
+```
+
+```
+fun main() {
+	val z:Int
+    
+    z = calculate(34,90) {a,b -> 
+        println("Vou calcular")
+        a+b
+    }
+    println(z)
+}
+
+fun sum(n1:Int,n2:Int) = n1.plus(n2)
+
+fun calculate(n1:Int,n2:Int, operation:(Int, Int) -> Int): Int{
+    val result = operation(n1,n2)
+    
+    return result
+}
+```
 #### Funções single-line e Funções/extensões
+
+Nas funções **Single-line** o retorno é inferido no `=` e são funçõe sem uma única linha
+
+
+```
+private fun getFullName(nameString, lastName:String) = "$name $lastName
+
+private fun getFullName(nameString, lastName:String) = 
+"$name $lastName
+```
+
+As **funções de extensão** criam funções que só podem ser chamadas por um tipo específico, cujo valor poded ser referenciado dentro da função através da palavra **this**
+
+Ajuda a manter as funções type safe
+
+```
+fun String.randomCapitalizedLetter() = 
+this[(0..this.length-1).random()].toUpperCase()
+```
 
 #### Estruturas de Controle
 
