@@ -480,7 +480,85 @@ fun Int.getStudentStatus():String{
 
 #### Estruturas de Repetição
 
-* 
+While, do..while, for e forEach
+
+Aceitam os comando sin, range, until, downTo e step
+
+```
+while(condição) {
+    //bloco
+}
+```
+
+```
+do {
+    //bloco
+}
+while(condição)
+```
+
+* For
+
+Estrutura do for :
+
+**for**(variavelIndexadora **in/ultil/downTo** faiza de valores/condicional **step** intervalo)
+
+In: conta do do valor inicial até o valor final
+
+Until: Conta do valor atual até o valor estabelecido menos 1
+
+DownTo: Conta de maneira decrescente
+
+Step: Determina o intervalo da contagem
+
+Exemplos:
+
+```
+for(i in 0..20 step 2) {
+    println(i)
+}
+```
+
+```
+for(i in 10 downTo 0) {
+    println(i)
+}
+```
+
+```
+for(i in 0 until 10) {
+    println(i)
+}
+```
+
+```
+var text = "kotlin"
+
+for(letter in text) {
+    println(letter)
+}
+```
+
+```
+fun main() {
+    var text = "kotlin"
+
+    text.forEach{l ->
+        print(l+" ")
+    }
+}
+```
+
+
+```
+fun main() {
+    var text = "kotlin"
+
+    text.forEach{
+    println("oi")
+    }
+}
+```
 
 ## Links
 
