@@ -560,6 +560,92 @@ fun main() {
 }
 ```
 
+## Fundamentos de Orientação a Objetos com Kotlin
+
+#### Introdução a Orientação a objetos em Kotlin
+
+A orientação de objetos permite que o mundo real seja abstraído em itens/objetos para que seja possível representá-los em um aplicação
+
+
+#### Classe pública e privada
+
+As classes são representaçãos da abstração do mundo real para a aplicação
+
+Objetos são elementos que representam uma instância de uma classe
+
+##### Membros da classe
+
+A classe possui:
+
+* Propriedades: São as variáveis da classe. Ex: nome, cpf. E permitem que a classe tenha estado
+
+> É posível definir private para apenas o get/set de uma propriedade(mmodificador de visibilidade)
+
+```
+class Pessoa {
+    var nome: String = "Talita"
+
+    var cpf: String = "123.456.789-00"
+    private set
+}
+```
+
+* Métodos: Função que realizam operações com as propriedades da classe no estado atual da classe
+
+* Construtores: Funções que definem estado inicial do objeto
+
+
+##### Inner class
+
+O Kotlin permite criar uma classe interna(dentro de outra classe)
+
+```
+class Pessoa {
+    var nome: String = "Talita"
+    var cpf: String = "123.456.789-00"
+
+    inner class Endereco {
+        var rua: String = "Rua teste"
+    }
+}
+```
+
+É possível acessar através do objeto de nível superior
+
+
+```
+fun main() {
+    val talita = Pessoa()
+
+    println(talita.nome)
+    println(talita.cpf)
+
+    println(talita.Endereco().rua)
+}
+```
+
+##### Data class
+
+Armazena dados que uma vez inicializados não é possível mudá-lo, ou seja, armazenar um estado naquele objeto e não mais modificá-lo
+
+A data class não pode ser abstrada, não pode ser inner e nem open, porém, pode implementar interface e todos os construtores primários precisam ser inicializados
+
+O objeto data class pode ser copiado
+
+```
+fun main() {
+    val digiOneBank = Banco(nome = "DigiOne", numero = 12)
+
+    println(digiOneBank.nome)
+    println(digiOneBank.numero)
+
+    val banco2 = digiOneBank.copy(nome = "DigiOne2")
+
+    println(banco2.nome)
+    println(banco2.numero)
+ }
+```
+
 ## Links
 
 * [Documentação Android](https://developer.android.com/docs)
