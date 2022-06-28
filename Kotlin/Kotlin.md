@@ -575,3 +575,6 @@ fun main() {
 * [Kotlin for javascript](https://kotlinlang.org/docs/js-overview.html)
 
 * [Curso Kotlin - Codelabs](https://developer.android.com/codelabs/kotlin-bootcamp-welcome#0)
+
+* [Noções básicas do Android em Kotlin](https://developer.android.com/courses/android-basics-kotlin/course)
+
