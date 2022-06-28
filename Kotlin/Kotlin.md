@@ -574,4 +574,4 @@ fun main() {
 
 * [Kotlin for javascript](https://kotlinlang.org/docs/js-overview.html)
 
-* [Curso Kotlin - Codelabs]([https://kotlinlang.org/docs/js-overview.html](https://developer.android.com/codelabs/kotlin-bootcamp-welcome#0))
+* [Curso Kotlin - Codelabs](https://developer.android.com/codelabs/kotlin-bootcamp-welcome#0)
