@@ -578,3 +578,4 @@ fun main() {
 
 * [Noções básicas do Android em Kotlin](https://developer.android.com/courses/android-basics-kotlin/course)
 
+* [Link para obtenção de certificado de Desenvolvedor Android](https://developers.google.com/certification/associate-android-developer)
