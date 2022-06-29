@@ -646,6 +646,47 @@ fun main() {
  }
 ```
 
+##### Enum
+
+São usados para modelar tipos que representam um conjunto finito de valores distintos, como direções, estados, modos e assim por diante.
+
+* [Documentação Enum Kotlin](https://kotlinlang.org/docs/enum-classes.html#working-with-enum-constants)
+
+##### Abstrações
+
+Permite que uma classe seja reutilizada na implementação de outra classe
+
+Para utilizar as propriedades de uma classe em outra, ou seja, ser extendida é necessário marcar a classe como `open`
+
+```
+open class Pessoa(
+    open val nome : String,
+    open val cpf : String
+)
+```
+
+```
+class Funcionario(
+    override val nome : String,
+    override val cpf : String,
+    val salario : BigDecimal
+) : Pessoa(nome, cpf) {
+}
+```
+
+Para usar a classe como uma classe base/ abstração é necessário anotar a classes como `abstract`
+
+```
+abstract class Pessoa(
+    val nome : String,
+    val cpf : String
+)
+```
+
+##### Polimofismo
+
+Polimorfismo significa "muitas formas", é o termo definido em linguagens orientadas a objeto, como por exemplo Java, C# e C++, que permite ao desenvolvedor usar o mesmo elemento de formas diferentes. Polimorfismo denota uma situação na qual um objeto pode se comportar de maneiras diferentes ao receber uma mensagem.
+
 ## Links
 
 * [Documentação Android](https://developer.android.com/docs)
@@ -665,3 +706,5 @@ fun main() {
 * [Noções básicas do Android em Kotlin](https://developer.android.com/courses/android-basics-kotlin/course)
 
 * [Link para obtenção de certificado de Desenvolvedor Android](https://developers.google.com/certification/associate-android-developer)
+
+* [Link com projeto do módulo] (https://github.com/TalitaRamos/DigiOneBank)
