@@ -687,6 +687,136 @@ abstract class Pessoa(
 
 Polimorfismo significa "muitas formas", é o termo definido em linguagens orientadas a objeto, como por exemplo Java, C# e C++, que permite ao desenvolvedor usar o mesmo elemento de formas diferentes. Polimorfismo denota uma situação na qual um objeto pode se comportar de maneiras diferentes ao receber uma mensagem.
 
+## Coleções, Arrays e Listas
+
+##### IntArray
+
+```
+val values = IntArray(5)
+
+values[0] = 1
+values[1] = 2
+values[2] = 4
+values[3] = 6
+values[4] = 8
+
+for (value in values) {
+    println(value)
+}
+
+println("---------")
+
+values.forEach {
+    println(it)
+}
+
+println("---------")
+
+values.forEach {valor ->
+    println(valor)
+}
+
+println("---------")
+
+for (index in values.indices) {
+    println(values[index])
+}
+
+println("---------")
+```
+
+##### intArrayOf
+
+Não é necessário passar a capacidade logo após a instanciação
+
+A forma de iterar é a mesma
+
+```
+ val values = intArrayOf(1,5,6,8,10,3)
+
+for (value in values) {
+    println(value)
+}
+
+println("---------")
+
+values.forEach {
+    println(it)
+}
+
+println("---------")
+
+values.forEach {valor ->
+    println(valor)
+}
+
+println("---------")
+
+for (index in values.indices) {
+    println(values[index])
+}
+
+println("---------")
+
+values.sort()
+for (value in values) {
+    println(value)
+}
+```
+
+##### Array de String
+
+Há duas formas:
+
+```
+//Primeira forma de declarar array de string - forma verbosa
+val nomes = Array(3) {""}
+
+nomes[0] = "Maria"
+nomes[1] = "Talita"
+nomes[2] = "Lucas"
+
+for (nome in nomes) {
+    println(nome)
+}
+
+println("---------")
+
+nomes.sort()
+nomes.forEach {
+    println(it)
+}
+
+println("---------")
+
+//segunda forma de declarar array de string - menos verbosa
+
+val nome2 = arrayOf("Maria", "Talita", "Lucas")
+nome2.sort()
+nome2.forEach {
+    println(it)
+}
+
+println("---------")
+```
+
+##### List
+
+É possível separar as listas em conjuntos com o `set` e juntar esses conjuntos com o `union`
+
+
+```
+//Conjuntos
+val funcionario1 = setOf(joao, talita)
+val funcionario2 = setOf(lucas)
+
+val result = funcionario1.union(funcionario2)
+
+result.forEach {
+    println(it)
+}
+```
+
 ## Links
 
 * [Documentação Android](https://developer.android.com/docs)
@@ -708,3 +838,5 @@ Polimorfismo significa "muitas formas", é o termo definido em linguagens orient
 * [Link para obtenção de certificado de Desenvolvedor Android](https://developers.google.com/certification/associate-android-developer)
 
 * [Link com projeto do módulo] (https://github.com/TalitaRamos/DigiOneBank)
+
+* [Link com testes de arrays e coleções] (https://github.com/TalitaRamos/api-collections)
