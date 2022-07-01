@@ -817,6 +817,36 @@ result.forEach {
 }
 ```
 
+
+##### Mutable List
+
+> mutableListOf
+
+> mutableSetOf
+
+> mutableMapOf
+
+Lista que após inicialização é possível fazer alterações tanto de adição quanto de remoção
+
+```
+val funcionarios = mutableListOf(joao, talita)
+
+funcionarios.add(lucas)
+funcionarios.remove(joao)
+
+val funcionariosSet = mutableSetOf(joao)
+
+funcionariosSet.add(talita)
+funcionariosSet.add(lucas)
+funcionariosSet.remove(lucas)
+```
+
+##### Extensions Functions
+
+As funções extendidas permitem criar funções para uma classe específica sem precisar herdar a classe ou utilizar padrões de projeto
+
+
+
 ## Links
 
 * [Documentação Android](https://developer.android.com/docs)
