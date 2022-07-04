@@ -38,9 +38,26 @@ implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
 
 ## Material Design
 
+Sistema de design genérico que pode ser aplicado em diversas plataformas
+
+Referências importantes:
+
+* [Sistemas de cores](https://material.io/design/color/the-color-system.html#tools-for-picking-colors)
+    * [Color Tool](https://material.io/resources/color/#!/?view.left=0&view.right=0)
+    
+* [Temas claro e escuro](https://material.io/design/color/dark-theme.html#ui-application)
+    
+* [Variações de "Top App Bars"](https://material.io/components/app-bars-top/android#regular-top-app-bar) 
+
+> Alt + Enter: Extrair para resource
+> Ctrl + r: Replace
 ## Layouts do App
 
 ## Links
 
 * [Documentação Android Jetpack](https://developer.android.com/jetpack?gclid=CjwKCAjwk_WVBhBZEiwAUHQCmejNWru4iWG4PrezVv7iarzW4OlPUx3W2hHDaEodcRbwVJ-8iGwv6xoC1VsQAvD_BwE&gclsrc=aw.ds)
 
+* [Material.io](https://material.io/)
+
+
+* [Android Open Source Project](https://source.android.com/)
