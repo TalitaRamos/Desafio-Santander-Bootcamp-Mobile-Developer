@@ -53,6 +53,24 @@ Referências importantes:
 > Ctrl + r: Replace
 ## Layouts do App
 
+## Glide
+
+Gerenciador de mídia rápido e eficiente que abstrai o processo de carregamento de imagens em Android, gerenciando desde a decodificação e transformação até o controle do cache das mesmas
+
+> implementation 'com.github.bumptech.glide:glide:4.11.0'
+
+> annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+## Retrofit
+
+Cliente HTTP para Android e Java. Tem a função de abstrair a complexidade no consumo de APIs. Possui uma série de facilidades que facilita o consumo de recursos.
+
+> implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+
+> implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+## Parcelable
+
 ## Links
 
 * [Documentação Android Jetpack](https://developer.android.com/jetpack?gclid=CjwKCAjwk_WVBhBZEiwAUHQCmejNWru4iWG4PrezVv7iarzW4OlPUx3W2hHDaEodcRbwVJ-8iGwv6xoC1VsQAvD_BwE&gclsrc=aw.ds)
@@ -61,3 +79,9 @@ Referências importantes:
 
 
 * [Android Open Source Project](https://source.android.com/)
+
+* [Retrofit (HTTP Client)](https://square.github.io/retrofit)
+
+* [Glide (Image Loading)](https://github.com/bumptech/glide)
+
+* [Listar dinâmicas com Recycler View](https://developer.android.com/guide/topics/ui/layout/recyclerview?hl=pt-br)
