@@ -71,6 +71,38 @@ Cliente HTTP para Android e Java. Tem a função de abstrair a complexidade no c
 
 ## Parcelable
 
+É uma estratégia de (de)serialização de dados padrão em apps android, ou seja, é a implementação utilizada para troca de mensagem entre telas.
+
+```
+plugins {
+
+    id 'kotlin-parcelize'
+}    
+```
+
+```
+@Parcelize
+data class Match (
+    @SerializedName("descricao")
+    val description: String,
+    @SerializedName("local")
+    val place: Place,
+    @SerializedName("mandante")
+    val homeTeam: Team,
+    @SerializedName("visitante")
+    val awayTeam: Team
+) : Parcelable
+```
+```
+public class Place implements Parcelable {
+    @SerializedName("nome")
+    private String name;
+    @SerializedName("imagem")
+    private String image;
+}
+//Ao selecionar o nome da classe e clicar em alt + enter o parcelabre é implementado
+```
+
 ## Links
 
 * [Documentação Android Jetpack](https://developer.android.com/jetpack?gclid=CjwKCAjwk_WVBhBZEiwAUHQCmejNWru4iWG4PrezVv7iarzW4OlPUx3W2hHDaEodcRbwVJ-8iGwv6xoC1VsQAvD_BwE&gclsrc=aw.ds)
