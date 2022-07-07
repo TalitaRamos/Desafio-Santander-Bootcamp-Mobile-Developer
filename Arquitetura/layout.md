@@ -116,4 +116,6 @@ public class Place implements Parcelable {
 
 * [Glide (Image Loading)](https://github.com/bumptech/glide)
 
+* [Parcelable](https://developer.android.com/kotlin/parcelize?hl=pt-br)
+
 * [Listar dinâmicas com Recycler View](https://developer.android.com/guide/topics/ui/layout/recyclerview?hl=pt-br)
