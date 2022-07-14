@@ -103,6 +103,23 @@ public class Place implements Parcelable {
 //Ao selecionar o nome da classe e clicar em alt + enter o parcelabre é implementado
 ```
 
+## Criar efeito de clique
+
+```
+android:clickable="true"
+android:focusable="true"
+
+//ripple effect
+android:background="?attr/selectableItemBackgroundBorderless"
+
+//selectablet effect
+android:background="?attr/selectableItemBackground"
+
+//Button effect
+android:adjustViewBounds="true"
+style="?android:attr/borderlessButtonStyle"
+```
+
 ## Links
 
 * [Documentação Android Jetpack](https://developer.android.com/jetpack?gclid=CjwKCAjwk_WVBhBZEiwAUHQCmejNWru4iWG4PrezVv7iarzW4OlPUx3W2hHDaEodcRbwVJ-8iGwv6xoC1VsQAvD_BwE&gclsrc=aw.ds)
@@ -119,3 +136,7 @@ public class Place implements Parcelable {
 * [Parcelable](https://developer.android.com/kotlin/parcelize?hl=pt-br)
 
 * [Listar dinâmicas com Recycler View](https://developer.android.com/guide/topics/ui/layout/recyclerview?hl=pt-br)
+
+* [LiveData](https://developer.android.com/topic/libraries/architecture/livedata?hl=pt-br)
+
+* [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel?gclid=Cj0KCQjwlK-WBhDjARIsAO2sErRFMssdP13ObaIhR9Z7k8Z67v8_r05_6mCPBncziAmEj9dEj-sp854aAlu7EALw_wcB&gclsrc=aw.ds)
