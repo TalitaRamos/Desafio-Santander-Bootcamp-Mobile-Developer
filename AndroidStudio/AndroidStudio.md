@@ -76,3 +76,5 @@ Tira um screenchot da tela que está em exibição no dispositivo e te detalha t
 * [Atalhos do teclado](https://developer.android.com/studio/intro/keyboard-shortcuts)
 
 * [Layout Inspector](https://developer.android.com/studio/debug/layout-inspector)
+
+* [Android Roadmap](https://roadmap.sh/android)
