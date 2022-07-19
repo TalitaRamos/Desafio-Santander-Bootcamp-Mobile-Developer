@@ -140,3 +140,5 @@ style="?android:attr/borderlessButtonStyle"
 * [LiveData](https://developer.android.com/topic/libraries/architecture/livedata?hl=pt-br)
 
 * [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel?gclid=Cj0KCQjwlK-WBhDjARIsAO2sErRFMssdP13ObaIhR9Z7k8Z67v8_r05_6mCPBncziAmEj9dEj-sp854aAlu7EALw_wcB&gclsrc=aw.ds)
+
+* [Room](https://developer.android.com/jetpack/androidx/releases/room?gclid=Cj0KCQjwidSWBhDdARIsAIoTVb2WRyCK_ndzP-govP_JaUCB08mzUsOYMo4v84b0HLS_2_qstPQv7U8aAiT0EALw_wcB&gclsrc=aw.ds)
