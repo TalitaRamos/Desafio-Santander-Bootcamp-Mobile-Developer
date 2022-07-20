@@ -140,3 +140,5 @@ style="?android:attr/borderlessButtonStyle"
 * [LiveData](https://developer.android.com/topic/libraries/architecture/livedata?hl=pt-br)
 
 * [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel?gclid=Cj0KCQjwlK-WBhDjARIsAO2sErRFMssdP13ObaIhR9Z7k8Z67v8_r05_6mCPBncziAmEj9dEj-sp854aAlu7EALw_wcB&gclsrc=aw.ds)
+
+* [Room](https://developer.android.com/training/data-storage/room)

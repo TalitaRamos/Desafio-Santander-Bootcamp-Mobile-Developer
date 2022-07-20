@@ -2,13 +2,17 @@
 
 ##### Links para os repositórios dos desafios e descrição
 
-* [Link com projeto do módulo] (https://github.com/TalitaRamos/DigiOneBank)
+* [Link com projeto do módulo](https://github.com/TalitaRamos/DigiOneBank)
 
-* [Link com testes de arrays e coleções] (https://github.com/TalitaRamos/api-collections)
+* [Link com testes de arrays e coleções](https://github.com/TalitaRamos/api-collections)
 
-* [Link com o app Simulador de partidas] (https://github.com/TalitaRamos/simulator-matches-bootcamp)
+* [Link com o app Simulador de partidas](https://github.com/TalitaRamos/simulator-matches-bootcamp)
 
-* [Link com o simulador de API para o app de Simulação de Partidas] (https://github.com/TalitaRamos/matches-simulater-api)
+* [Link com o simulador de API para o app de Simulação de Partidas](https://github.com/TalitaRamos/matches-simulater-api)
+
+* [Link com o app Soccer News](https://github.com/TalitaRamos/SoccerNewsDio)
+
+* [Link com o simulador de API para o app Soccer News](https://github.com/TalitaRamos/soccer-news-api)
 
 ##### Desafios de código
 
@@ -71,6 +75,27 @@ fun main() {
 ```
 
 ## Desafio 4
+
+```
+fun main() {
+   val input = readLine()!!
+  
+  val a = input.split(" ")[0].toFloat()
+  val b = input.split(" ")[1].toFloat()
+  val c = input.split(" ")[2].toFloat()
+ 
+  val perimetro = a + b + c
+  val area = ((a+b)*c)/2
+  
+  if (a < (b + c) &&  b < (a + c) &&  c < (a + b)){
+      println(String.format("Perimetro = %.1f", perimetro))
+  }else{
+     println(String.format("Area = %.1f",area))
+  } 
+}
+```
+
+## Desafio 5
 
 ```
 fun main() {
