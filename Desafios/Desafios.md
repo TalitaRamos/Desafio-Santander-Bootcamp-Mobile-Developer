@@ -2,13 +2,17 @@
 
 ##### Links para os repositórios dos desafios e descrição
 
-* [Link com projeto do módulo] (https://github.com/TalitaRamos/DigiOneBank)
+* [Link com projeto do módulo](https://github.com/TalitaRamos/DigiOneBank)
 
-* [Link com testes de arrays e coleções] (https://github.com/TalitaRamos/api-collections)
+* [Link com testes de arrays e coleções](https://github.com/TalitaRamos/api-collections)
 
-* [Link com o app Simulador de partidas] (https://github.com/TalitaRamos/simulator-matches-bootcamp)
+* [Link com o app Simulador de partidas](https://github.com/TalitaRamos/simulator-matches-bootcamp)
 
-* [Link com o simulador de API para o app de Simulação de Partidas] (https://github.com/TalitaRamos/matches-simulater-api)
+* [Link com o simulador de API para o app de Simulação de Partidas](https://github.com/TalitaRamos/matches-simulater-api)
+
+* [Link com o app Soccer News](https://github.com/TalitaRamos/SoccerNewsDio)
+
+* [Link com o simulador de API para o app Soccer News](https://github.com/TalitaRamos/soccer-news-api)
 
 ##### Desafios de código
 
