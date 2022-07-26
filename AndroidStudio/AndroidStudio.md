@@ -17,6 +17,10 @@ O Android Profile oferece em tempo real dados para ajudar a entender como o app 
 
 Ferramentas que auxiliam na investigação de bugs no código
 
+### Breakpoint
+
+Pontos de parada no código
+
 ### Debug App
 
 O Debug App executa o aplicativo em modo de depuração e pausa a execução conforme os pontos de interrupção definidos
@@ -24,6 +28,62 @@ O Debug App executa o aplicativo em modo de depuração e pausa a execução con
 ### Attach debugger
 
 Adiciona um debugger com o app em execução, sem que ele tenha que reinicar o build
+
+### ADB e ADB plugin
+
+Android Debug Bridge
+
+Operações que facilitam a manipulação no mode debug
+
+Pode ser chamado pelo temrinal mas possui plugin com principais funcionalidades (ADB Idea)
+
+Pode revogar permissões, limpar dados do app
+
+### LogCat
+
+Aba em que são exibidos logs da aplicação e do aparelho (do SO, de outros apps, etc)
+
+> Tipos de logs da aplicação
+
+> Criação de tags
+
+> Emisssão dinâmica de logs
+
+> Omissão de logs irrelevantes
+
+> Contextualização para crashs e exceptions
+
+#### Tipos de log
+
+> Debug(log.d)
+
+> error(log.e)
+
+> Info(log.i)
+
+> Verbose(log.v)
+
+> Warning(log.w)
+
+#### Exceptions
+
+A Throwable é uma superclasse de todos os Erros e Exception
+
+> Erros podem ocorrer tanto durante a execução quanto na aplicação
+
+> Exception  - geralmente quebram (causam crash) na aplicação
+
+> Ex: ActivityNotFoundException, NullPointerException, IndexOutOfBoundsException, classCastException
+
+Para pegar todas as exceptions que não tiveram tratamento : 
+````
+val currentThread = Thread.currentThread()
+currentThread.setIncaughtExceptionHandler{_, throwable ->
+
+    val t = throwable.message
+
+}
+````
 
 ### Evaluate Expressions
 
@@ -78,3 +138,5 @@ Tira um screenchot da tela que está em exibição no dispositivo e te detalha t
 * [Layout Inspector](https://developer.android.com/studio/debug/layout-inspector)
 
 * [Android Roadmap](https://roadmap.sh/android)
+
+* [ADB](https://developer.android.com/studio/command-line/adb?hl=pt&gclid=Cj0KCQjw_viWBhD8ARIsAH1mCd4g_t-kojtXURGhJcelDKrAUwLpzUjBnSDAIad75zTcr6EIQrlnxBUaAntFEALw_wcB&gclsrc=aw.ds)
