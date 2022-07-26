@@ -99,7 +99,108 @@ fun main() {
 
 ```
 fun main() {
-   
+   for(i in 1..3) {
+    val l = readLine()!!.toInt()
+    val v = readLine()!!.split(" ")
+    
+    var maior = 0
+    for (a in 0..l-1){
+      if (v[a].toInt() > maior) maior = v[a].toInt()
+    }
+    
+    if(maior < 10) println("1")
+    else if (maior > 10 && maior < 20) println("2")
+    else println("3")
+   }
 }
 ```
 
+## Desafio 6
+
+```
+fun main() {
+   val n = readLine()!!.toInt()
+    var a = 0
+    var b = 1
+
+    for (i in 1..(n -1)) {
+        print("$a ")
+
+        val sum = a + b;
+        a = b;
+        b = sum;
+    }
+    println("$a")
+}
+```
+## Desafio 7
+
+```
+fun main() {
+    val nTestes = readLine()!!.toInt()
+    var i = 0
+
+    while (i < nTestes){
+        var cont = 0
+        while (cont == 0) {
+            var raios = readLine()
+            var raiosArray: List<String> = raios!!.split(" ")
+            var r1 = raiosArray[0]
+            var r2 = raiosArray[1]
+            println(String.format("%d",r1.toInt()+r2.toInt()))
+            cont++
+        }
+        i++
+    }
+}
+```
+
+## Desafio 8
+
+```
+fun main() {
+   val N = readLine()!!.toInt()
+    for (i in 1..N) {
+        var str = readLine()!!
+        var N1 : Int = str.substring(0, 1).toInt()
+        var N2 : Int = str.substring(2).toInt()
+        var x : String = str.substring(1, 2)
+
+        if (N1.equals(N2)) {
+            println(String.format("%d",N1 * N2))
+        } else {
+            if (x.toUpperCase()==x) {
+                println(String.format("%d",N2 - N1))
+            } else {
+                println(String.format("%d",N1 + N2))
+            }
+        }
+    }
+}
+```
+
+
+## Desafio 9
+
+```
+fun main() {
+   val x = (readLine() ?: return).toInt()
+    val y = (readLine() ?: return).toInt()
+    var total = 0
+
+    if (x < y) {
+        for (i in x..y) {
+            if (i % 13 != 0) {
+                total += i
+            }
+        }
+    } else {
+        for (i in x downTo  y) {
+            if (i % 13 != 0) {
+                total += i
+            }
+        }
+    }
+    println(total)
+}
+```
