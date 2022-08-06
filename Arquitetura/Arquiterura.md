@@ -32,4 +32,78 @@ Responsável por informar a criação, interrupção ou retomada de uma tela ou 
 
 ![Ciclo de vida](../imagens/ciclo_de_vida.png)
 
+### Arquitetura
 
+O Android é uma pilha de software com base em Linux de código aberto criada para diversos dispositivos e fatores de forma. 
+
+[Arquitetura da plataforma ](https://developer.android.com/guide/platform?hl=pt-br#:~:text=O%20Android%20%C3%A9%20uma%20pilha,pilha%20de%20software%20do%20Android.)
+
+### Segurança
+
+* Proteger a troca de informações
+
+ - Configurar segurança de rede: como âncoras de segurança personalizadas, cancelar o usp do tráfego de texto simples, fixar certificados
+ 
+ - SafetyNet: Conjuntos de servições que ajudam a proteger o app de ameças a segurança
+ 
+ - Criptografia: Especificar um provedor, escolher um algoritmo de criptografia
+ 
+ - Aparelhos com android 9 é possível usar confirmação protegida pelo android(útil para transações)
+ 
+* Oferecer as permissões corretas (mínimo de permissões)
+
+* Armazenar dados de forma segura
+
+ - Armazenamento interno: Acesso só pelo app
+ - Armazenamento externo: Qualquer app pode acessar
+ - Provedor de conteúdo: Mecanismo e armazenamento que pode permitir ou não que outros apps acessem
+ 
+* Manter serviços e dependências atualizadas
+
+* Resolver problemas encontrados pelo Google Play
+
+ - O programa App Security Improvement auxilia os desenvolvedores a achar falhas no app e indicam ajustes. Os apps são analisados quando colocados na loja
+
+
+[Usar o Google Play Protect para manter a segurança dos seus apps e a privacidade dos seus dados](https://support.google.com/googleplay/answer/2812853?hl=pt-BR)
+
+
+[Programa de divulgação de vulnerabilidades](https://developers.google.com/android/play-protect/starting-a-vdp)
+
+[Security](https://source.android.com/security)
+
+### Android App Bundle
+
+formato que inclui todo o código e recursos compilados do seu aplicativo e adia a geração e assinatura de APK no Google Play
+
+### MVVM
+
+Model-View-View-Model
+
+A recomendação da google é usar a arquitetura MVVM em projetos android
+
+![MVVM](../imagens/mvvm.png)
+
+* Activity/Fragment (View): Camada onde teremos as partes relacionadas a componentes visuais(activities/fragments) e lógica relacionada a esses componentes
+
+* ViewModel: Responsável por ter a lógica de negócio (o viewmodel não deve "conhecer" os componentes de UI)
+
+* Repository: Manipula operações de dados com o banco de dados e/ou webservice
+
+* Datasorce: Fonte dos dados(local ou remoto). Pode ser únido em uma camada que é o model
+
+* LiveData: Armazena dados observáveis
+
+[Guia para a arquitetura do app](https://developer.android.com/jetpack/guide)
+
+[Visão geral do ViewModel ](https://developer.android.com/topic/libraries/architecture/viewmodel?hl=pt-br)
+
+### clean Architeture
+
+* Domain: Modelos e regras de negócio
+
+* Data: Abstração para acessar o datasource
+
+* Usecases: Transmite as ações do usuário
+
+* App: Irá conter as implementações das interfaces da camada de dados
